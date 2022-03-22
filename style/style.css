@@ -5,108 +5,65 @@
 body
 {    
     font-family: 'Overpass', sans-serif;    
-    background-image: url('../images/bg-desktop.svg');
-    background-color: hsl(257, 40%, 49%);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
-.bodyContentWrapper
-{
-    width: 80%;
-    margin: auto;
-}
-
-.titleWrapper
-{
-    width: 100%;
-    height: 160px;
-    display: flex;
-    align-items: center;    
-}
-
-.titleLogo
-{
-    height: 80px;    
-    width: auto;
-    margin-left: 50px;
-}
-
-
-
 
 .ProductDetailsWrapper
 {
-    height: 500px;          
+    height: 500px;       
+    display: flex;    
+    flex-direction: column;
+}
+
+.ProductDetailsContentWrapper
+{
+    height: 600px;
+    margin: auto;
+}
+
+
+.DetailLogo
+{
+    width: 60%;
+    margin: 50px auto;
 }
 
 .ProductContentWrapper
 {
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 80%;
+    flex-direction: column;        
+    margin: 0 auto;
+    width: 60%;
     height: 350px;
-    justify-content: space-around;
+    justify-content: space-around;       
 }
 
 .ProductDetailTitle
 {
     font-size: 28px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-align: center;
+}
+
+.ProductDetailTitle .Color1
+{
+    color: hsl(0, 36%, 70%);    
 }
 
 .ProductDetails
 {
-    color: white;
+    color: hsl(0, 36%, 70%);
     font-size: 16px;    
-    line-height: 25px;
-    text-align: center;
+    line-height: 25px;    
 }
 
-.RegisterBtnWrapper
+.EmailAddressInput
 {
-    height: 60px;
-    width: 200px;
-    background-color: white;
-    border-radius: 35px;
-    text-align: center;
-    padding-top: 17px;
-    font-size: 20px;
-    cursor: pointer;
-    color: hsl(257, 40%, 49%);
-    margin-left: auto;
-    margin-right: auto;    
-}
-
-.RegisterBtnWrapper:hover
-{
-    background-color: hsl(300, 69%, 71%);
-    color:white;
-}
-
-footer
-{
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
-
-.FooterIconWrapper
-{
-    width:200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-
-.FooterIcon
-{
-    width: 50px;    
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(143deg) brightness(105%) contrast(103%);
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    width: 70%;
+    border: 1px solid #decdcd;
 }
 
 
@@ -141,33 +98,47 @@ footer
     .col-s-12 {width: 100%;}  
     
     [class*="col-"] {
-        float: left;        
+        float: right;        
       }
+
+    .TitleWrapper
+    {
+        display: none;
+    }
+
+    .bodyContentWrapper
+    {
+        width: 80%;
+        margin: auto;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .BodyContentRow
+    {
+        height: 800px;
+    }
+
+
+
 
     .ProductDetailTitle
     {
-        font-size: 40px;      
+        font-size: 60px;      
         text-align: left;  
+        line-height: 60px;
     }
 
-    .ProductDetails
+    .ProductDetailsWrapper
     {
-        font-size: 18px;        
-        line-height: 30px;
-        text-align: left;
+        height: 100%;
+        background-image: url('../images/bg-pattern-desktop.svg');
+        background-color: #fff9f9;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    .FooterIconWrapper
-    {
-        position: absolute;        
-        top: 20px;
-        right: 0px;
-    }
 
-    .RegisterBtnWrapper
-    {
-        margin:0;  
-    }
 }
   
 @media only screen and (min-width: 1000px)

@@ -7,6 +7,15 @@ body
     font-family: 'Overpass', sans-serif;    
 }
 
+.TitleWrapper
+{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #fff9f9;
+    padding-left: 20px;
+}
+
 .ProductDetailsWrapper
 {
     height: 500px;       
@@ -16,7 +25,7 @@ body
 
 .ProductDetailsContentWrapper
 {
-    height: 600px;
+    height: 400px;
     margin: auto;
 }
 
@@ -25,6 +34,7 @@ body
 {
     width: 60%;
     margin: 50px auto;
+    display: none;
 }
 
 .ProductContentWrapper
@@ -39,7 +49,7 @@ body
 
 .ProductDetailTitle
 {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     color: black;
     text-align: center;
@@ -57,14 +67,61 @@ body
     line-height: 25px;    
 }
 
+.EmailInputWrapper
+{
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
 .EmailAddressInput
 {
     height: 40px;
     border-radius: 20px;
     padding-left: 20px;
-    width: 70%;
+    width: 100%;
     border: 1px solid #decdcd;
+    position: absolute;
+    left:0px;
+    background: transparent;
 }
+
+.SubmitBtn
+{
+    border-radius: 20px;
+    background-color: hsl(0, 93%, 68%);
+    right: 0px;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.SubmitBtn img
+{
+    display: block;
+    margin: auto;    
+}
+
+.DesktopHero
+{
+    display: none;
+}
+
+
+.ProductDetailsWrapper
+{
+    height: 100%;    
+    background-color: #fff9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
 
 
 
@@ -101,7 +158,22 @@ body
         float: right;        
       }
 
+    .DetailLogo
+    {
+        display: block;
+    }
+
     .TitleWrapper
+    {
+        display: none;
+    }
+
+    .DesktopHero
+    {
+        display: block;
+    }
+
+    .MobileHero
     {
         display: none;
     }
@@ -119,9 +191,6 @@ body
         height: 800px;
     }
 
-
-
-
     .ProductDetailTitle
     {
         font-size: 60px;      
@@ -131,14 +200,18 @@ body
 
     .ProductDetailsWrapper
     {
-        height: 100%;
         background-image: url('../images/bg-pattern-desktop.svg');
-        background-color: #fff9f9;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
+    .ProductDetailsContentWrapper
+    {
+        height: 600px;
+    }
 
+    .EmailInputWrapper
+    {
+        width: 70%;
+    }
 }
   
 @media only screen and (min-width: 1000px)

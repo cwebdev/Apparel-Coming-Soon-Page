@@ -22,9 +22,17 @@ An apparel brand coming soon page (responsive website) developed from PSD using 
 
 This "coming soon" page of apparel brand is developed in HTML5, CSS3 and JavaScript from PSD design. Page is responsive in web and mobile screens. Site performs very well in Google lighthouse performance metrics.
 
+### Lighthouse Screenshot
+
+![](./Lighthouse_Screenshot.jpg)
+
 ### Desktop Screenshot
 
+![](./Desktop_Screenshot.png)
+
 #### Mobile Screenshot
+
+![](./Mobile_Screenshot.png)
 
 ### Links
 

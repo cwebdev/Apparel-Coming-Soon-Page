@@ -40,6 +40,7 @@ body {
 	width: 75%;
 	height: 350px;
 	justify-content: space-around;
+	margin-top: 30px;
 }
 
 .ProductDetailTitle {
@@ -178,6 +179,7 @@ body {
 	}
 	.bodyContentWrapper {
 		width: 70%;
+		min-width: 1300px;
 		margin: auto;		
 		margin-top: 100px;
 	}
@@ -206,6 +208,7 @@ body {
 	}
 	.ProductContentWrapper {
 		width: 60%;
+		margin-top: 0px;
 	}
 	.EmailInputWrapper {
 		width: 70%;

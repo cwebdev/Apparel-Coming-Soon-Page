@@ -13,46 +13,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css"> 
 </head>
-<body>
-  <main role="main">
-    <div class="bodyContentWrapper">
-      <div class="TitleWrapper" role="banner">
-        <div class="titleLogo">
+<body>  
+  <div class="container">
+    <header class="header" role="banner">
+      <div class="header__logo">
+        <img src="images/logo.svg" alt="base apparel logo" width="158" height="33"/>
+      </div>
+    </header>      
+    <main id="main" role="main" class="row mainrow hero">
+      <div class="hero__image-container">
+        <img class="hero__desktop-image" src="images/hero-desktop.jpg" alt="desktop hero image showing brand product" width="610" height="800"/>
+        <img class="hero__mobile-image" src="images/hero-mobile.jpg" alt="mobile hero image showing brand product" width="375" height="250"/>
+      </div>
+      <div class="hero__details">
+        <div class="hero__logo">
           <img src="images/logo.svg" alt="base apparel logo" width="158" height="33"/>
         </div>
-      </div>      
-      <div class="row BodyContentRow">
-        <div class="ImageContainer">
-          <img class="DesktopHero" src="images/hero-desktop.jpg" alt="desktop hero image showing brand product" width="610" height="800"/>
-          <img class="MobileHero" src="images/hero-mobile.jpg" alt="mobile hero image showing brand product" width="375" height="250"/>
-        </div>
-        <div class="ProductDetailsWrapper">
-          <div class="DetailLogo">
-            <img src="images/logo.svg" alt="base apparel logo" width="158" height="33"/>
-          </div>
-          <div class="ProductDetailsContentWrapper">          
-            <div class="ProductContentWrapper">
-              <div class="ProductDetailTitle">
-                <div class="Color1">WE'RE </div>
-                <div>COMING</div>
-                <div>SOON</div>               
-              </div>
-              <div class="ProductDetails">
-                Hello fellow shoppers! We're currently building our new fashion store. 
-                Add your email below to stay up-to-date with announcements and our launch deals.
-              </div>
-              <div class="EmailInputWrapper">
-                <input class="EmailAddressInput" placeholder="Email Address" />
-                <div class="SubmitBtn">
-                  <img src="images/icon-arrow.svg" alt="arrow button" width="9" height="15" />
-                </div>
+        <div class="hero__content-container">          
+          <div class="hero__content">
+            <div class="hero__title">
+              <div class="hero__title--pink">WE'RE </div>
+              <div>COMING</div>
+              <div>SOON</div>               
+            </div>
+            <div class="hero__paragraph">
+              Hello fellow shoppers! We're currently building our new fashion store. 
+              Add your email below to stay up-to-date with announcements and our launch deals.
+            </div>
+            <div class="hero__email-container">
+              <input class="hero__email-input" placeholder="Email Address" />
+              <div class="hero__submit-btn">
+                <img class="hero__submit-btn-img hero__submit-btn-img--control" src="images/icon-arrow.svg" alt="arrow button" width="9" height="15" />
               </div>
             </div>
           </div>
         </div>
-      </div>  
-      </main>  
-    </div>
-  </main>
+      </div>
+    </main>        
+  </div>
 </body>
 </html>

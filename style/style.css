@@ -124,7 +124,7 @@ body {
 	width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
 	/* For tablets: */
 	.col-s-1 {
 		width: 8.33%;
@@ -173,15 +173,16 @@ body {
 	}
 	.DesktopHero {
 		display: block;
+		width: 500px;
+		height: auto;		
 	}
 	.MobileHero {
 		display: none;
 	}
 	.bodyContentWrapper {
-		width: 70%;
-		min-width: 1300px;
+		width: 90%;		
 		margin: auto;		
-		margin-top: 100px;
+		margin-top: 5%;
 	}
 	.BodyContentRow {
 		height: 800px;
@@ -196,8 +197,9 @@ body {
 		line-height: 60px;
 	}
 	.ProductDetailsWrapper {
-		background-image: url('../images/bg-pattern-desktop.svg');
-		min-width: 650px;
+		background-image: url('../images/bg-pattern-desktop.svg');		
+		height: 82%;
+		width: 50%;
 	}
 	.ProductDetailsContentWrapper {
 		height: 600px;
@@ -212,10 +214,12 @@ body {
 	}
 	.EmailInputWrapper {
 		width: 70%;
+		min-width: 300px;
+		margin-top:5%;
 	}
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1440px) {
 	/* For desktop: */
 	.col-1 {
 		width: 8.33%;
@@ -252,5 +256,21 @@ body {
 	}
 	.col-12 {
 		width: 100%;
+	}
+
+	.DesktopHero {
+		display: block;			
+		width: 610px;	
+	}
+
+	.ProductDetailsWrapper
+	{
+		height: 100%;	
+		width: auto;
+		min-width: 60%;
+	}
+
+	.bodyContentWrapper {
+		width: 70%;	
 	}
 }

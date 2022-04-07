@@ -40,12 +40,15 @@
               Hello fellow shoppers! We're currently building our new fashion store. 
               Add your email below to stay up-to-date with announcements and our launch deals.
             </div>
-            <div class="hero__email-container">
-              <input class="hero__email-input" placeholder="Email Address" />
-              <div class="hero__submit-btn">
-                <img class="hero__submit-btn-img hero__submit-btn-img--control" src="images/icon-arrow.svg" alt="arrow button" width="9" height="15" />
+            <form class="hero__form" name="newsletter" method="GET" action="#">
+              <div class="hero__email-container">
+                <label for="heroEmail" class="hero__email-label">Email address</label>
+                <input id="heroEmail" name="email" class="hero__email-input" placeholder="Email Address" />
+                <button type="submit" class="hero__submit-btn">
+                  <img class="hero__submit-btn-img hero__submit-btn-img--control" src="images/icon-arrow.svg" alt="arrow button" width="9" height="15" />
+                </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

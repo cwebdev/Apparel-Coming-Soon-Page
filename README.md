@@ -42,8 +42,8 @@ This "coming soon" page of apparel brand is developed in HTML5, CSS3 and JavaScr
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Flexbox
 - Mobile-first workflow
+- BEM (Block, Element, Modifier) Class Naming Convention
 
 ## Author
 

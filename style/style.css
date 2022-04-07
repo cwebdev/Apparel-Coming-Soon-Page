@@ -68,6 +68,11 @@ body {
 	width: 100%;
 }
 
+.hero__email-label
+{
+	display: none;
+}
+
 .hero__email-input {
 	height: 40px;
 	border-radius: 20px;
@@ -76,7 +81,7 @@ body {
 	border: 1px solid #decdcd;
 	position: absolute;
 	left: 0px;
-	background: transparent;
+	background: transparent;	
 }
 
 .hero__submit-btn {
@@ -90,12 +95,30 @@ body {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	border: 0px;
 }
 
 .hero__submit-btn-img--control
 {
 	display: block;
 	margin: auto;
+}
+
+.hero__submit-btn::after
+{	
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;	    
+    transition: background-color 150ms ease-in-out;
+	background-color: transparent;
+}
+
+.hero__submit-btn:hover::after
+{
+	background-color: rgba(255,255,255,.5);
 }
 
 .hero__submit-btn img {
